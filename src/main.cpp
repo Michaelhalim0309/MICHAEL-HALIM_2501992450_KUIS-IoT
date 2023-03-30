@@ -68,8 +68,7 @@ void OnReadPublish(){
   Serial.println();
 
   // Buat range antar humid, suhu, cahaya
-  if (temperature > 28 && humidity > 80)
-  {
+  if (temperature > 28 && humidity > 80){
     digitalWrite(LED_RED, HIGH);
     Serial.println("LED Merah Hidup");
   }
@@ -77,18 +76,15 @@ void OnReadPublish(){
     digitalWrite(LED_RED, LOW);
     Serial.println("LED Merah Mati");
   }
-  if (temperature > 28 && 60 < humidity < 80)
-  {
+  if (temperature > 28 && 60 < humidity < 80){
     digitalWrite(LED_ORANGE, HIGH);
     Serial.println("LED Orange Hidup");
   }
-  else
-  {
+  else{
     digitalWrite(LED_ORANGE, LOW);
     Serial.println("LED Orange Mati");
   }
-  if (temperature < 28 && humidity < 60)
-  {
+  if (temperature < 28 && humidity < 60){
     digitalWrite(LED_GREEN, HIGH);
     Serial.println("LED Hijau Hidup");
   }
