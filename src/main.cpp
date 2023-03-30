@@ -65,7 +65,7 @@ void OnReadPublish(){
   Serial.print(humidity);
   Serial.print("%, Light: ");
   Serial.print(lightlevel);
-  Serial.println("lx");
+  Serial.println();
 
   // Buat range antar humid, suhu, cahaya
   if (temperature > 28 && humidity > 80)
